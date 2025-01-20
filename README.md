@@ -1,9 +1,9 @@
-YU JIN's Development Institute <br>
-welcome :) <br>
+<b>YU JIN's Development Institute </b> <br>
+<b> welcome :) </b><br>
 
 이 곳은 제가 UI, 추후 Front Dev까지 공부해서 <br>
 코드를 올려보는 영역입니다. <br>
-환영합니다 :D <br>
+환영합니다 :D <br><br><br><br><br>
 
 <b>진행사항</b>
 <ol>
