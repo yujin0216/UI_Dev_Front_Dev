@@ -1,0 +1,375 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+* { margin:0; padding:0;  }
+ol,ul { list-style:none; }
+a { outline:0; text-decoration:none; color:#555; }
+img { border:0; }
+body { font:12px/1.6 arial; color:#555; position: relative;}
+audio {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+}
+
+
+
+a.port {
+    color:#000;
+    position:relative;
+    left:600px; top:-50px;
+    font-size:20px;
+    font-family:'Righteous';
+    transform:rotate(140deg);
+    font-weight:bold;
+}
+article#planner_1 a.plans {
+    color:#fff;
+    position:relative;
+    left:600px; top:50px;
+    font-size:20px;
+    font-family:'Righteous';
+    font-weight:bold;
+}
+article#planner_2 a.plans {
+    color:#fff;
+    position:relative;
+    left:600px; top:140px;
+    font-size:20px;
+    font-family:'Righteous';
+    font-weight:bold;
+}
+
+
+
+/* 로고 */
+h1 { 
+	position:fixed;
+	top:50px; left:50px; 
+	z-index:10;
+    color:#fff;
+    font-size:30px;
+    text-shadow:2px 4px 2px #000;
+    cursor:pointer;
+}
+h1 img { 
+	width:200px; height:auto; 
+}
+
+
+
+/* 메뉴 */
+#menu {
+	position:fixed;
+	top:50%; left:0; 
+	margin-top:-100px; z-index:13;
+}
+#menu a { 
+	display:block; 
+	width:200px; height:60px;
+	font-family:'Righteous';
+	font-size:14px;
+	color:#000; 
+	text-align:right;
+	overflow:hidden; 
+	box-sizing:border-box;
+	border-top:1px solid #111;
+	opacity:0.8;
+	transition:all 0.5s;
+}
+#menu li:hover a {
+	font-size:24px; 
+	opacity:1;
+}
+#menu li.on a {
+	font-size:24px;
+	opacity:1;
+}
+#menu li:nth-child(1):hover a {
+	color:lightskyblue;
+	border-color:lightskyblue;
+}
+#menu li:nth-child(2):hover a {
+	color:#fff;
+	border-color:#fff;
+}
+#menu li:nth-child(3):hover a {
+	color:#ffec6a;
+	border-color:#ffec6a;
+}
+#menu li:nth-child(4):hover a {
+	color:#005a89;
+	border-color:#005a89;
+}
+
+
+#menu li:nth-child(1).on a {
+	color:lightskyblue;
+	border-color:lightskyblue;
+}
+#menu li:nth-child(2).on a {
+	color:#fff;
+	border-color:#fff;
+}
+#menu li:nth-child(3).on a {
+	color:#ffe;
+	border-color:#000;
+}
+#menu li:nth-child(4).on a {
+	color:#005a89;
+	border-color:#005a89;
+}
+
+/* 레이아웃 */
+section { 
+	width:100%; height:700px;
+	position:relative;
+	background-size:cover;
+	background-position:right center;
+	overflow:hidden;
+}
+section article img#YUJIN {
+    position:relative;
+    bottom:200px;
+}
+
+p.Speak {
+    text-align:center;
+    color:#fff;
+    position:relative;
+    top:300px; left:350px;
+    font-size:15px;
+}
+section article p.info {
+    color:#fff;
+    font-size:15px;
+    position:relative;
+    left:250px; bottom:450px;
+    padding-top:5px;
+}
+ul#JangDan {
+    position:relative;
+    bottom:250px;
+    color:#fff;
+    font-family:'Righteous';
+    text-shadow: #333 1px 0 10px;
+    font-size: 15px;
+}
+ul#JangDan span.JangDanJum {
+    color:#fff;
+    text-shadow: #333 1px 0 10px;
+    font-size: 15px;
+}
+
+/* 두 번째*/
+span#Skills {
+    position:relative;
+    top:-330px; left:500px;
+    text-align:center;
+    margin:0 auto;
+    font-size:30px;
+    font-family:'Righteous';
+}
+img.Skills {
+    position:absolute;
+    top:-200px;
+    width:500px;
+}
+img.ackJung {
+    width:60px; height:60px;
+    position:relative;
+    left:0; top:280px;
+}
+p.MarkUp {
+    font-size:20px;
+    position:relative;
+    left:530px; top:-150px;
+    line-height:35px;
+}
+p.Cording {
+    font-size:20px;
+    position:relative;
+    left:530px; top:-70px;
+    line-height:35px;
+}
+p.Design {
+    font-size:20px;
+    position:relative;
+    left:530px; top:10px;
+    line-height:35px;
+}
+
+span#PortTit {
+    color:#fff;
+    font-weight:bold;
+    font-size:20px;
+    position:relative;
+    top:-330px;
+}
+ul li#time img {
+    width:250px; height:130px;
+    position:absolute;
+    top:-290px;
+}
+ul li#Vogue img { 
+    width:250px; height:130px;
+     position:absolute;
+    top:-290px; left:265px;
+}
+ul li#Sarar img { 
+    width:250px; height:130px;
+     position:absolute;
+    top:-290px; left:530px;
+}
+ul li#Intro img { 
+    width:250px; height:130px;
+     position:absolute;
+    top:-290px; left:800px;
+}
+ul li#cad img { 
+    width:250px; height:130px;
+     position:absolute;
+    top:160px; left:0px;
+}
+span#PortTit2 {
+    color:#fff;
+    font-weight:bold;
+    font-size:20px;
+    position:relative;
+    top:0px;
+}
+ul li#responsive img {
+    width:250px; height:130px;
+    margin-top:-30px;
+    bottom:100px;
+    position:absolute;
+}
+ul li#starbucks img {
+    width: 250px; height: 130px;
+    position: absolute;
+    bottom: 100px; left:265px;
+}
+
+
+.plan {
+    position: absolute;
+    left:550px;
+}
+.plan a {
+    font-size: 30px;
+    font-weight:bold;
+}
+
+
+
+
+span#PortTit3 {
+    color:#fff;
+    font-weight:bold;
+    font-size:20px;
+    position:relative;
+    top:155px;
+}
+.car-estimate {
+    position: absolute;
+    
+}
+ul li#Ani img {
+    width:250px; height:130px;
+    margin-top:20px;
+    position:absolute;
+    top:240px;
+}
+p#contact {
+    font-size:20px;
+    text-align:center;
+    color:#000;
+    border:3px solid #000;
+    padding:10px 10px 10px 10px;
+    position:relative;
+    left:250px; top:-100px;
+    line-height:45px;
+    font-weight: bold;
+}
+
+section:nth-child(1) {
+	background-image:url(../images/combat-and-sky.png);
+}
+section:nth-child(2) {
+	background-image:url(../images/sky.jpeg);
+}
+section:nth-child(3) {
+	background-image:url(../images/sky.jpeg);
+}
+section:nth-child(4) {
+	background-image:url(../images/combat-and-sky.png)
+}
+
+article {
+	position:absolute;
+	top:46%; left:300px;
+	z-index:11;
+}
+article p {
+	font-family:'Righteous';
+	font-size:50px;
+	letter-spacing:2px;
+	line-height:1;
+}
+article span {
+	font-size:16px;
+}
+
+section:nth-child(1) p {
+	color:lightskyblue;
+}
+section:nth-child(1) span {
+	color:#111;
+}
+section:nth-child(2) p {
+	color:#000;
+}
+section:nth-child(2) span {
+	color:#fff;
+}
+section:nth-child(3) p {
+	color:#000;
+}
+section:nth-child(3) span {
+	color:#ffec6a;
+}
+
+
+.work__port {
+    display:block;
+    position: absolute;
+    bottom: 21px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.unorder__work-port li {
+    display: inline-flex;
+    justify-content: space-between;
+    position: relative;
+    top: 80px;
+}
+.unorder__work-port li:nth-child(2) {
+    position: absolute;
+    left: 250px; top:125px;
+}
+.unorder__work-port li:nth-child(3) {
+    position: absolute;
+    left: 450px; top:115px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

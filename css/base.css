@@ -1,0 +1,24 @@
+@charset "utf-8";
+body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, tr, th, td, caption, form, fieldset, input, select, textarea, blockquote, address, button {margin:0;padding:0}
+h1, h2, h3, h4, h5, h6 {font-size:100%}
+ul, ol, li {list-style:none}
+img, fieldset, button {padding:0;margin:0;border:0 none}
+button {background:none}
+address, em {font-style:normal}
+table {border-collapse:collapse;border-spacing:0}
+q:before, q:after {content:''}
+
+/* html5 tag */
+article, aside, details, figure, figcaption, footer, header, hgroup, menu, nav, section {display:block;margin:0;padding:0}
+body {width:100%;height:100%;overflow-y:hidden}
+body, input, select {background:#fff;color:#000;font:62.5%/1 "돋음", Dotum, Arial, sans-serif;-webkit-user-select:none;-webkit-text-size-adjust:none} /* 아이폰 가로보기시 자동확대 방지 */
+input, select {font-size:1em}
+a {color:#fff;text-decoration:none}
+/*a:hover, a:focus {color:#fff}*/
+.blind {position:absolute;top:-9999px;visibility:hidden;width:0;height:0;font-size:1%;line-height:0}
+hr {display:none}
+
+strong {font-weight:normal}
+caption {display:none}
+button {cursor:pointer;/*outline:none*/}
+label {cursor:pointer}

@@ -1,0 +1,479 @@
+@chaerset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://fonts.googleapis.com/css?family=Monoton|Play');
+
+* { margin:0; padding:0; }
+ol,ul,li { list-style:none; }
+a { text-decoration:none; outline:0; color:#ddd; }
+img { border:0; }
+
+.vid {
+	opacity:0.9;
+	width:100%; height:100%;
+	position:fixed;
+	top:-60px; left:0;
+}
+.vid video { 
+	width:100%; 
+	/*min-width:1600px;*/ /* 위치에 따라서 생략가능. 사용안해도 상관없음. */
+}
+h1 {
+	position:fixed;
+	left:40px; top:40px;
+	z-index:999;
+}
+h1 img {
+	width:200px;
+	height:auto;
+}
+header {
+	width:700px;
+	height:100%;
+	position:fixed;
+	left:-420px; top:0;
+	background:linear-gradient(-45deg,#e6fc55,#97e931);
+	transform:skewX(-40deg);
+}
+
+/* 대메뉴 */
+#gnb {
+	width:220px;
+	position:absolute;
+	top:150px; right:0;
+}
+#gnb > li { position:relative; }
+#gnb > li > a {
+	display:block;
+	width:220px; height:50px;
+	font:bold 18px/3 play;
+	color:#222;
+	box-sizing:border-box;
+	padding-right:40px;
+	text-align:right;
+}
+#gnb > li.on > a {
+	background-color:#111;
+	color:#fff;
+}
+#gnb > li:hover > a {
+	background-color:#111;
+	color:#fff;
+}
+#gnb em { 
+	display:inline-block;
+	transform:skewX(40deg);
+}
+#gnb em i {
+	margin-right:20px;
+}
+
+/* 서브 메뉴 */
+#gnb ul {
+	position:absolute;
+	left:0; top:0;
+	opacity:0;
+	transition:all 0.4s;
+}
+#gnb > li:hover ul {
+	left:205px;
+	opacity:0.8;
+}
+#gnb ul a {
+	display:block;
+	width:150px; height:40px;
+	background:#222;
+	border-bottom:1px solid #b9fb05;
+	font:bold 16px/2.5 arial;
+	box-sizing:border-box;
+	padding-left:50px;
+	margin-bottom:3px;
+}
+#gnb ul a:hover {
+	background:#b9fb05;
+	color:#333;
+}
+#gnb > li.on ul {
+	opacity:0.8;
+	left:205px;
+	top:-10px;
+}
+
+/* 우측 상단 sns 버튼 모음*/
+#sns {
+	position:fixed;
+	overflow:hidden;	
+	right:50px; top:60px;
+}
+#sns > li { 
+	float:left; 
+	margin-right:30px;
+}
+#sns .fa { 
+	font-size:25px; 
+	color:#b9fb05;
+	opacity:0.5;
+	transform:scale(1);
+	transition:all 0.5s;
+}
+#sns .fa:hover {
+	opacity:1;
+	transform:scale(1.4);
+}
+#sns > li > i { 
+	display:block;
+	padding:10px;
+	color:#b9fb05;
+	opacity:0.7;
+	font-size:1.5em;
+	transition:all 0.4s;
+}
+#sns > li > i:hover {
+	opacity:1;
+	transition:scale(1.3);
+}
+
+/* 웹 폰트 텍스트 박스 */
+.txtBox {
+	position:fixed;
+	width:340px; height:300px;
+	top:200px; right:70px;
+}
+.txt {
+	position:absolute;
+	top:200px; right:0;
+	font-size:34px;
+	font-family:play;
+	color:#bbb;
+	letter-spacing:-2px;
+}
+.txt b {
+	font:bold 34px arial;
+	color:#b9fb05;
+	margin-left:20px;
+}
+.tit {
+	position:absolute;
+	right:0; top:0;
+	font-size:160px;
+	color:#b9fb05;
+	font-family:'Monoton',cursive;
+	letter-spacing:-1px;
+}
+.tit em {
+	font-size:50px;
+	font-family:play;
+	color:#fff;
+}
+
+/* 하단 콘텐츠 */
+#side {
+	width:800px;
+	height:100%;
+	position:fixed;
+	right:-800px; bottom:0;
+	background-color:#111;
+	opacity:0.5;
+	transform:skewX(-40deg);
+	transition:all 0.5s;
+}
+#side:hover {
+	right:-500px;
+	opacity:0.8;
+}
+#side .con {
+	position:absolute;
+	width:400px;
+	height:100%;
+	left:150px; bottom:0;
+	background-color:#000;
+	box-sizing:border-box;
+	padding:10px;
+	transition:all 1s;
+}
+#side:hover .con {
+	left:50px;
+}
+/* 콘텐츠 내 썸네일 */
+#side .con p {
+	width:300px;
+	height:100px;
+	position:absolute;
+	left:50px;
+}
+#side .con p em {
+	display:inline-block;
+	font:bold 16px/1.7 arial;
+	color:#a0bd50;
+	transform:skewX(40deg);
+}
+#side .con p img {
+	width:300px; height:70px;
+	opacity:0.3;
+	transition:all 0.5s;
+}
+#side .con p img:hover {
+	opacity:1;
+}
+#side .con p:nth-child(1) {
+	bottom:270px;
+	transform:translateX(200px);
+	transition:all 0.4s;
+}
+#side .con p:nth-child(2) {
+	bottom:160px;
+	transform:translateX(200px);
+	transition:all 0.7s;
+}
+#side .con p:nth-child(3) {
+	bottom:50px;
+	transform:translateX(200px);
+	transition:all 1.2s;
+}
+#side:hover .con p {
+	transform:translateX(0px);	
+}
+
+/* 자동 롤링 버튼 */
+#side .btnContents {
+	width:150px;
+	height:50px;
+	position:absolute;
+	left:100px; bottom:40px;
+	color:#8ac007;
+	transform:skewX(40deg);
+}
+#side:hover .btnContents { 
+	left:700px; 
+}
+.btnContents i {
+	font-size:60px;
+	position:absolute;
+	bottom:0; right:0;
+	opacity:1;
+}
+@keyframes ani {
+	0% { right:0; transform:scale(1); opacity:1; }
+	100% { right:100px; transform:scale(1.5); opacity:0; }
+}
+.btnContents i:nth-child(1) {
+	animation:ani linear 1.5s 0s infinite;
+}
+.btnContents i:nth-child(2) {
+	animation:ani linear 1.5s 0.5s infinite;
+}
+.btnContents i:nth-child(3) {
+	animation:ani linear 1.5s 1.0s infinite;
+}
+
+
+
+
+/* 
+.btnContents {
+	position:absolute;
+	left:40px; bottom:40px;
+	color:#8ac007;
+	font-size:3.5em;
+	transform:skewX(40deg);
+	letter-spacing:-10px;
+}
+#side:hover .btnContents {
+	display:none;
+}
+#side .btnContents i:nth-child(1) {
+	opacity:0.3;
+	transform:scale(1.5);
+	animation:ani1 0.8s infinite;
+}
+#side .btnContents i:nth-child(2) {
+	opacity:0.6;
+	transform:scale(1.4);
+	animation:ani2 1.1s	infinite;
+}
+#side .btnContents i:nth-child(3) {
+	opacity:0.8;
+	transform:scale(1.3);
+	animation:ani3 1.5s infinite;
+}
+@keyframes ani1 { 
+	from { margin-left:0; transform:translateX(0); opacity:0.5; }
+	to{ margin-left:-25px; transform:translateX(-20px); opacity:1; }
+}
+@keyframes ani2 { 
+	from { transform:translateX(0); opacity:0.5; }
+	to{ transform:translateX(-20px); opacity:1; }
+}
+@keyframes ani3 { 
+	from { transform:translateX(0); opacity:0.5; }
+	to{ transform:translateX(-20px); opacity:1; }
+}
+*/
+
+/*
+#side {
+	position:fixed;
+	right:-1000px; bottom:0;
+	transform:skewX(-40deg);
+	background-color:green;
+	width:50%;
+	height:100%;
+	opacity:0.8;
+	transition:margin 0.6s;
+}
+#side .con {
+	position:absolute;
+	left:200px; top:0;
+	background-color:blue;
+	width:50%; height:100%; 
+}
+#side > .con > p {
+	position:absolute;
+	left:50px; bottom:50px;
+	display:block;
+	transform:skewX(40deg);
+}
+#side > .con > p:nth-child(1) { bottom:250px;}
+#side > .con > p:nth-child(2) { bottom:150px;}
+.con img {
+	transform:skewX(-35deg);
+	margin-right:20px;
+}
+.con em {
+	display:block;
+	width:200px;
+	margin-left:75px;
+	color:#8ac007;
+	font-weight:700;
+}
+#side:hover {
+	margin-right:600px;
+}
+*/
+
+/*
+.txtBox {
+	position:fixed;
+	width:340px; height:300px;
+	top:200px; right:70px;
+	background:#ddd;
+}
+
+.txtBox p.tit {
+	position:absolute;
+	font-family: 'Monoton', cursive;
+	color:#b9fb05; 
+	right:0; top:0;
+	font-size:200px;
+}
+.txtBox .tit > em {
+	font-family: 'play', cursive;
+	font-size:60px;
+	color:white;
+}
+.titBox .txt {
+	position:absolute;
+	font-family: 'play', cursive;
+	color:#b9fb05;
+}
+*/
+
+/*
+.txtbox .txt {
+	position:absolute;
+	background-color:yellow;
+	left:0; bottom:0;
+	font-family: 'Monoton', cursive;
+	color:red;	
+}
+*/
+
+/* 
+#gnb > li > ul {
+	position:absolute;
+	left:0; top:0;
+	opacity:0;
+	transition:all 0.25s linear;
+}
+#gnb > li:hover > ul {
+	opacity:1;
+	margin-left:200px;
+}
+
+#gnb > li > ul > li:hover a { background-color:#8ac007; }
+#gnb > li.on > ul {
+	margin-left:200px;
+	top:10px;
+	opacity:0.8;
+}
+#gnb ul > li > a { 
+	display:block;
+	width:150px; height:40px;
+	line-height:40px;
+	background:rgba(0,0,0,0.8);
+	text-align:center;
+	border-bottom:1px solid #8ac007;
+} 
+#gnb a > em > b { transform:skewX(40deg); }
+*/
+
+
+/*
+body {	 /* fixed는 상,하,좌,우의 스크롤 때문에 사용하게 되었음.
+	position:fixed; 
+	width:100%; height:100%;
+	background:#111;
+*/
+
+/* 배경 동영상 */
+/*
+.vid {
+	opacity:0.9;
+	width:100%; height:100%;
+	position:fixed;
+	top:-60px; left:0;
+}
+.vid video { 
+	width:100%; 
+	/*min-width:1600px;*/ /* 위치에 따라서 생략가능. 사용안해도 상관없음.} */
+	
+
+/* 로고와 메뉴 */
+/*
+h1 {
+	position:absolute;
+	margin:30px 0 0 30px;
+	z-index:999;
+}
+header {
+	position:absolute;
+	background-color:#8ac007;
+	width:45%;
+	height:100%;
+	transform:skew(-38deg);
+	left:-20%;
+}
+ul#gnb {
+	position:absolute;
+	right:0; left:20%;
+}
+ul#gnb > li {
+	width:200px; height:60px;
+	background-color:#8ac007;
+}
+ul#gnb > li:hover {
+	color:#000;
+}
+ul#gnb > li:first-child > a { color:#fff; }
+#gnb > li > i { padding:30px; }
+a { 
+	display:block;
+	transform:skew(45deg); 
+	padding-right:40px;
+	color:#000;
+	font-weight:700;
+	line-height:50px;
+	float:right;
+}
+*/
+
+

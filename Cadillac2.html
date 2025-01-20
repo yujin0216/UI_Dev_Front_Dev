@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<title>Cadillac - XT6 견적보기</title>
+    <link rel="stylesheet" href="css/cadillac2.css" />
+	
+	<script>
+		function car() {
+			var basic_car = Number(document.getElementById("total").defaultValue);
+
+			for(var i=1; i<=4; i++){
+				var checkedObj = document.getElementById("opt"+i);
+				if(checkedObj.checked==true)				
+					basic_car += Number(checkedObj.value);
+			}
+			
+			document.getElementById("total").value=basic_car;
+		}
+
+
+	</script>
+</head>
+<body>
+    
+    <div id="wrap">
+        <div id="inner">
+         <header>
+                 <h1><a href="cadillac.html"><img src="images/logo_.png" /></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">캐딜락하우스서울</a></li>
+                    <li><a href="#">차량정보</a></li>
+                    <li><a href="#">구매정보</a></li>
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">브랜드정보</a></li>
+                    <li><a href="#">HELP CENTER</a></li>
+                </ul>
+            </nav>
+        </header>
+            
+	<h1>XT6 에 대한 견적입니다.</h1>
+	<div id="carZone">
+	  <p><img src="images/XT6.png" alt="자동차" /></p>
+	  <table id="estimate">
+		<colgroup>
+				<col width="380px" />
+				<col width="160px" />
+				<col width="*" />
+		</colgroup>
+		<thead>
+		<tr>
+		  <th scope="row">옵 션</th>
+		  <th scope="row">추가 가격</th>
+		  <th scope="row">선택</th>
+		</tr>
+		</thead>
+	  <tfoot>
+			<tr>
+				<th  scope="col">(기본)차량가격</th>
+				<td colspan="2">
+				 <input type="text" name="total" id="total" 
+				 value="23450000" readonly="readonly" />
+				</td>
+			</tr>
+	  </tfoot>
+	  <tbody>
+			<tr>
+				<td><label for="opt1">인조가죽시트</label></td><td>359500</td>
+				<td>
+				<input type="checkbox" name="opt1" id="opt1"
+				value="359500" onclick="car();" /></td>
+			</tr>
+			<tr>
+				<td><label for="opt2">내비게이션</label></td><td>455000</td>
+				<td><input type="checkbox" name="opt2" id="opt2"
+				value="455000" onclick="car();"  /></td>
+			</tr>
+			<tr>
+				<td><label for="opt3">선루프</label></td><td>100000</td>
+				<td><input type="checkbox" name="opt3" id="opt3"
+				value="100000" onclick="car();"  /></td>
+			</tr>
+            <tr>
+				<td><label for="opt4">스마트키</label></td><td>200000</td>
+				<td><input type="checkbox" name="opt4" id="opt4"
+				value="200000" onclick="car();"  /></td>
+			</tr>
+	  </tbody>
+	  </table>
+	 </div>
+             <nav id="Fulldown_nav">
+               <ul>
+                 <li>
+                    <a class="nav_tit" href="#" title="캐딜락하우스서울">캐딜락하우스서울</a>
+                     <ul>
+                         <li><a href="#" title="캐딜락하우스 서울 정보">캐딜락하우스 서울 정보</a></li>
+                         <li><a href="#" title="시승예약">시승예약</a></li>
+                         <li><a href="#" title="이벤트">이벤트</a></li>
+                         <li><a href="#" title="찾아오기">찾아오기</a></li>
+                     </ul>
+                 </li>
+                   
+                 <li>
+                    <a class="nav_tit" href="#" title="차량정보">차량정보</a>
+                     <ul>
+                         <li><a href="#" title="XT5">XT5</a></li>
+                         <li><a href="#" title="XT6">XT6</a></li>
+                         <li><a href="#" title="ESCALADE">ESCALADE</a></li>
+                         <li><a href="#" title="CT4">CT4</a></li>
+                         <li><a href="#" title="CT5">CT5</a></li>
+                         <li><a href="#" title="CT6">CT6</a></li>
+                     </ul>
+                 </li>
+                   
+                 <li>
+                    <a class="nav_tit" href="#" title="구매정보">구매정보</a>
+                     <ul>
+                         <li><a href="#" title="차량프로모션">차량프로모션</a></li>
+                         <li><a href="#" title="온라인 브로셔">온라인 브로셔</a></li>
+                         <li><a href="#" title="견적신청">견적신청</a></li>
+                         <li><a href="#" title="시승신청">시승신청</a></li>
+                         <li><a href="#" title="금융정보">금융정보</a></li>
+                         <li><a href="#" title="전시장찾기">전시장찾기</a></li>
+                         <li><a href="#" title="서비스센터">서비스센터</a></li>
+                     </ul>
+                 </li>
+                   
+                 <li>
+                    <a class="nav_tit" href="#" title="뉴스">뉴스</a>
+                     <ul>
+                         <li><a href="#" title="뉴스">뉴스</a></li>
+                         <li><a href="#" title="이벤트">이벤트</a></li>
+                     </ul>
+                 </li>
+                 
+                 <li>
+                    <a class="nav_tit" href="#" title="브랜드정보">브랜드정보</a>
+                     <ul>
+                         <li><a href="#" title="캐딜락의 역사">캐딜락의 역사</a></li>
+                         <li><a href="#" title="컨셉카">컨셉카</a></li>
+                         <li><a href="#" title="캐딜락 CUE">캐딜락 CUE</a></li>
+                     </ul>
+                 </li>
+                   
+                 <li>
+                    <a class="nav_tit" href="#" title="서비스">서비스</a>
+                     <ul>
+                         <li><a href="#" title="부품 및 부품가격">부품 및 부품가격</a></li>
+                         <li><a href="#" title="캐딜락 보증">캐딜락 보증</a></li>
+                         <li><a href="#" title="내 차량 리콜 확인">내 차량 리콜 확인</a></li>
+                         <li><a href="#" title="재제조품 사용고지">재제조품 사용고지</a></li>
+                         <li><a href="#" title="블루투스">블루투스</a></li>
+                         <li><a href="#" title="무선 충전">무선 충전</a></li>
+                         <li><a href="#" title="기술 교육 및 정비 자료">기술 교육 및 정비 자료</a></li>
+                     </ul>
+                 </li>
+                   
+                 <li>
+                    <a class="nav_tit" href="#" title="HELP CENTER">HELP CENTER</a>
+                     <ul>
+                         <li><a href="#" title="고객센터">고객센터</a></li>
+                         <li><a href="#" title="캐딜락 코리아 소개">캐딜락 코리아 소개</a></li>
+                         <li><a href="#" title="대표이사 인사말">대표이사 인사말</a></li>
+                         <li><a href="#" title="Copyright & Trademark Info">Copyright & Trademark Info</a></li>
+                         <li><a href="#" title="Cadillac Sites">Cadillac Sites</a></li>
+                         <li><a href="#" title="Global Sites">Global Sites</a></li>
+                         <li><a href="#" title="SITEMAP">SITEMAP</a></li>
+                         <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+                         <li><a href="#" title="영상정보처리기기 운영 및 관리방침">영상정보처리기기 운영 및 관리방침</a></li>
+                     </ul>
+                 </li>    
+              </ul>
+            </nav>
+            
+            <footer>
+                <h2 id="foot_logo"><img src="images/logo_.png"></h2>
+                <ul class="footer">
+                    <li>CADILLAC KOREA</li>
+                    <li>Copyright & Trademark Info</li>
+                    <li>Cadillac Sites</li>
+                    <li>Global Sites</li>
+                    <li>SITEMAP</li>
+                    <li>개인정보 처리방침</li>
+                    <li>영상정보처리기기 운영, 관리 방침</li>
+                </ul>
+                
+                <ul class="SNS">
+                    <li><a href="#"><img src="images/facebook.PNG"></a></li>
+                    <li><a href="#"><img src="images/instagram.PNG"></a></li>
+                    <li><a href="#"><img src="images/kakao.PNG"></a></li>
+                    <li><a href="#"><img src="images/naver.PNG"></a></li>
+                    <li><a href="#"><img src="images/youtube.PNG"></a></li>
+                </ul>
+            </footer>
+    </div>
+   </div>
+</body>
+</html>
